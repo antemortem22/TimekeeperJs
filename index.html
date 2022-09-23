@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
         <title>Timekeeper</title>
     </head>
     <body>
-    
+    <main>
+        <div class="circle"> 
+            <div id="stopwatch" class="stopwatch">00:00</div>
+            <div class="buttons">
+                <div class="stop" onclick="stop()"></div>
+                <div id="play-pause" class="paused" onclick="playPause()"></div>
+            </div>
+        </div>
+        <div id="seconds-sphere" class="sconds-sphere"></div>
+
+    </main>
         
        
     </body>
